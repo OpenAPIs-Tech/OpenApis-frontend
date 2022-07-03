@@ -9,15 +9,16 @@
  .banner-text { width: 100%; }
  .banner-text h1 {
     font: 90px/1.1em 'opensans-bold', sans-serif;
-    color: #fff;
+    color: #ff5e14;
     letter-spacing: -2px;
     margin: 0 auto 18px auto;
  }
  .banner-text h3 {
-    font: 18px/1.9em 'librebaskerville-regular', serif;
-    color: #ddd;
+    font: 20px/1.9em 'librebaskerville-regular', serif;
+    color: rgb(190, 84, 84);
     margin: 0 auto;
     width: 70%;
+
  }
  .banner-text hr {
     width: 60%;
