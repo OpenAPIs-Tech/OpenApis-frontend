@@ -1,14 +1,17 @@
+import  Nav  from './components/Nav/Nav';
+import  Main  from './components/Main/Main';
+import NavProvider from './context/NavContext';
 
-import './App.css';
 
 function App() {
-  return (
-    <div className="App">
-     <p>
-      Open Apis
-     </p>
-    </div>
-  );
+	return (
+		<div className='appContainer'>
+			<NavProvider>
+				<Nav />
+				<Main />
+			</NavProvider>
+		</div>
+	);
 }
 
 export default App;
