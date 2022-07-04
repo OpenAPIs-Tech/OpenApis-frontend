@@ -14,7 +14,7 @@ export const Footer = () => {
                         <i class="fas fa-map-marker-alt"></i>
                         <div class="cta-text">
                             <h4>Find us</h4>
-                            <span>1010 Avenue, sw 54321, chandigarh</span>
+                            <span>Zakir Husain College of Engineering and Technology , AMU</span>
                         </div>
                     </div>
                 </div>
@@ -50,7 +50,7 @@ export const Footer = () => {
                         </div>
                         <div class="footer-social-icon">
                             <span>Follow us</span>
-                            <a href="#"><i class="fab fa-facebook-f facebook-bg"></i></a>
+                            <a href=""><i class="fab fa-facebook-f facebook-bg"></i></a>
                             <a href="#"><i class="fab fa-twitter twitter-bg"></i></a>
                             <a href="#"><i class="fab fa-google-plus-g google-bg"></i></a>
                         </div>
@@ -81,7 +81,7 @@ export const Footer = () => {
             <div class="row">
                 <div class="col-xl-6 col-lg-6 text-center text-lg-left">
                     <div class="copyright-text">
-                        <p>Copyright &copy; 2018, All Right Reserved <a href="/">OpenAPIs</a></p>
+                        <p>Copyright &copy; 2022, All Right Reserved <a href="/">OpenAPIs</a></p>
                     </div>
                 </div>
                 <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">

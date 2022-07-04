@@ -1,7 +1,7 @@
 import React from 'react';
 import Home from '../Home/Home';
 import About from '../About/About';
-import Contact from '../Contact/Contact';
+import Users from '../Users/Users';
 import Team from '../Team/Team';
 import Services  from '../Services/Services';
 
@@ -11,7 +11,7 @@ const Main = () => (
 		<Home />
 		<About />
 		<Services />
-		<Contact />
+		<Users />
 		<Team />
 	</main>
 );
