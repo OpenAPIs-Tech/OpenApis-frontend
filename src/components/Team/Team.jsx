@@ -1,27 +1,61 @@
-import React from 'react';
-import { useNav } from '../../customHooks/useNav';
-import '../Page.css';
+import React from "react";
+import { useNav } from "../../customHooks/useNav";
+import Card from "@mui/material/Card";
+import CardContent from "@mui/material/CardContent";
+import CardMedia from "@mui/material/CardMedia";
+import Typography from "@mui/material/Typography";
+import { CardActionArea } from "@mui/material";
+import DATA from "./TeamDetails";
+import "./Team.css"
+
+
 
 const Team = () => {
-	// useNav takes in a navLinkId and returns a ref
-	// this ref is used to register the navLinkId that's
-	// currently in view, and apply activeClass styling
-	// to the corresponding nav childElement
+  const teamRef = useNav("Team");
 
-	const teamRef = useNav('Team');
+  return (
+    <div ref={teamRef} id="teamContainer">
+      <div className="container">
+        <div className="section-header">
+        <h3>Team</h3>
+          <p><i>We believe that The way to success is by working together.</i></p>
+        </div>
 
-	return (
-		<section ref={teamRef} id='teamContainer'>
-			<img
-				src='https://source.unsplash.com/random/600x600/?nature,water'
-				alt='unsplash-img'
-			/>
-			<div>
-				<h3>TEAM</h3>
-				<p>This is the team section</p>
-			</div>
-		</section>
-	);
+        <div className="row">
+          {DATA.name.map((val, index) => {
+            return (
+              <div className="col-lg-3 col-md-6" key={index}>
+                <Card sx={{ maxWidth: 345 }} className="team-content">
+                  <CardActionArea>
+                    <CardMedia
+                      component="img"
+                      height="140"
+                      image={DATA.imgURL[index]}
+                      alt="team_member"
+                    />
+                    <CardContent>
+                      <Typography gutterBottom variant="h5" component="div" >
+                        {val} 
+                      </Typography>
+                      <Typography gutterBottom variant="h7" component="div" >
+                       {DATA.designation[index]}
+                      </Typography>
+                      <Typography variant="body2" color="text.secondary">
+                      <div className="social" >
+                    <a target="_blank" href={DATA.LinkedinURL[index]}><i className="fab fa-linkedin" style={{marginRight:"3px"}}></i></a>
+                    <a target="_blank" href={DATA.GithubURL[index]}><i className="fab fa-github "></i></a>
+                  </div>
+                      </Typography>
+                    </CardContent>
+                  </CardActionArea>
+                </Card>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+    </div>
+  );
 };
 
 export default Team;

@@ -1,4 +1,4 @@
-import logoImg from "../images/logo.jpg";
+
 import "./Nav.css";
 import React, { useState } from "react";
 
@@ -17,7 +17,7 @@ function Navbar() {
       <nav className="navbar">
         <h1 className="navbar-logo">
           <a href="/">
-            <img src={logoImg} className="company_logo" alt="Logo" />
+            <img src="assests/images/logo.jpg" className="company_logo" alt="Logo" />
           </a>
         </h1>
         <div className="menu-icon" onClick={handleClick}>

@@ -1,26 +1,58 @@
 import React from 'react';
 import { useNav } from '../../customHooks/useNav';
-import '../Page.css';
+import Card from "@mui/material/Card";
+import CardContent from "@mui/material/CardContent";
+import CardMedia from "@mui/material/CardMedia";
+import Typography from "@mui/material/Typography";
+import { CardActionArea } from "@mui/material";
+import DATA from "./ServicesDetails";
+import "./Services.css"
+
+
+
 
 const Services = () => {
-	// useNav takes in a navLinkId and returns a ref
-	// this ref is used to register the navLinkId that's
-	// currently in view, and apply activeClass styling
-	// to the corresponding nav childElement
 
 	const servicesRef = useNav('Services');
 
 	return (
-		<section ref={servicesRef} id='servicesContainer'>
-			<img
-				src='https://source.unsplash.com/random/600x600/?nature,water'
-				alt='unsplash-img'
-			/>
-			<div>
-				<h3>SERVICES</h3>
-				<p>This is the sevices section</p>
-			</div>
-		</section>
+		<div ref={servicesRef} id='servicesContainer'>
+			  <div className="container">
+        <div className="section-header">
+        <h3>Our Open Source APIs</h3>
+          <p><i>Take a look at some of our APIs. </i></p>
+        </div>
+
+        <div className="row">
+          {DATA.service_name.map((val, index) => {
+            return (
+              <div className="col-lg-3 col-md-6" key={index}>
+                <Card sx={{ maxWidth: 400 }} className="team-content"  >
+                  <CardActionArea href="https://github.com/OpenAPIs-Tech/tahoe">
+                    <CardMedia
+                      component="img"
+                      height="140"
+                      image={DATA.imgURL[index]}
+                      alt="api"
+                    />
+                    <CardContent>
+                      <Typography gutterBottom variant="h5" component="div" >
+                        {val} 
+                      </Typography>
+                      <Typography variant="body2" color="text.secondary">
+                      <div  >
+                   {DATA.text[index]}
+                  </div>
+                      </Typography>
+                    </CardContent>
+                  </CardActionArea>
+                </Card>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+		</div>
 	);
 };
 
