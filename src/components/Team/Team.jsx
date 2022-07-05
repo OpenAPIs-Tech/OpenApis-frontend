@@ -18,7 +18,7 @@ const Team = () => {
       <div className="container">
         <div className="section-header">
         <h3>Team</h3>
-          <p><i>We believe that The way to success is by working together.</i></p>
+          <p className="section-text"><i>We believe that The way to success is by working together.</i></p>
         </div>
 
         <div className="row">
@@ -33,7 +33,7 @@ const Team = () => {
                       image={DATA.imgURL[index]}
                       alt="team_member"
                     />
-                    <CardContent>
+                    <CardContent className="team-name">
                       <Typography gutterBottom variant="h5" component="div" >
                         {val} 
                       </Typography>
@@ -42,7 +42,7 @@ const Team = () => {
                       </Typography>
                       <Typography variant="body2" color="text.secondary">
                       <div className="social" >
-                    <a target="_blank" href={DATA.LinkedinURL[index]}><i className="fab fa-linkedin" style={{marginRight:"3px"}}></i></a>
+                    <a target="_blank" href={DATA.LinkedinURL[index]}><i className="fab fa-linkedin" style={{marginRight:"1rem"}}></i></a>
                     <a target="_blank" href={DATA.GithubURL[index]}><i className="fab fa-github "></i></a>
                   </div>
                       </Typography>

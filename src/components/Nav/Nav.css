@@ -1,6 +1,6 @@
 /* new */
 .navbar {
-	background: #0164c9;
+	background:#fff;
 	height: 80px;
 	display: flex;
 	justify-content: center;
@@ -8,7 +8,7 @@
 	font-size: 1.2rem;
   }
   .nav-links{
-	color: #fff;
+	color:rgb(202, 187, 187);
 	text-decoration: none;
 	padding: 0.5rem 1rem;
 	cursor: pointer;
@@ -37,13 +37,13 @@
   }
   
   .nav-links {
-	color: #fff;
+	color: rgb(202, 187, 187);
 	text-decoration: none;
 	padding: 0.5rem 1rem;
   }
   
   .nav-links:hover {
-	color: white;
+	color: rgb(139, 124, 124);
   }
   
   .fa-bars {

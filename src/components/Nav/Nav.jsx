@@ -17,7 +17,7 @@ function Navbar() {
       <nav className="navbar">
         <h1 className="navbar-logo">
           <a href="/">
-            <img src="assests/images/logo.jpg" className="company_logo" alt="Logo" />
+            <img src="assests/images/logo.svg" className="company_logo" alt="Logo" />
           </a>
         </h1>
         <div className="menu-icon" onClick={handleClick}>

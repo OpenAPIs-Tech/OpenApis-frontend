@@ -18,3 +18,12 @@
  .team-content{
   margin-bottom:2rem;
  }
+ .team-name{
+    text-align: center;
+ }
+ .section-text{
+   font: 20px/1.9em 'librebaskerville-regular', serif;
+   color: rgb(202, 187, 187);
+   text-align: center;
+
+ }
