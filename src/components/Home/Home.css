@@ -2,34 +2,43 @@
     display: inline-block;
     vertical-align: middle;
     margin: 0 auto;
-    width: 85%;
-    text-align: center;
+    width:85%;
+    justify-content: center;
+    margin-top:-2rem;
  }
  .banner-text { width: 100%; }
  .banner-text h1 {
-    font: 90px/1.1em 'opensans-bold', sans-serif;
-    color: #ff5e14;
-    letter-spacing: -2px;
-    margin: 0 auto 4px auto;
+   color: rgb(17, 17, 17);
+    font-size:2rem;
+    font-weight: 700;
+    text-align: center;
+    width:50%;
  }
- .banner-text h3 {
+ .banner-text p {
     font: 20px/1.9em 'librebaskerville-regular', serif;
-    color: rgb(190, 84, 84);
-    margin: 0 auto;
-    width: 70%;
+    color: rgb(202, 187, 187);
+    width:85%;
+    text-align: center;
 
  }
- .banner-text hr {
-    width: 60%;
-    margin: 18px auto 24px auto;
-    border-color: #2F2D2E;
-    border-color: rgba(150, 150, 150, .1);
+
+ 
+ .highlight{
+   color: #0164c9;;
  }
+ 
+ .button-component{
+   margin-top:-2rem;
+   justify-content: center;
+ }
+
  @media (max-width: 960px) {
-    .banner-text h1{
-        font: 60px/1.9em 'librebaskerville-regular', serif;
+  .banner-text h1 {
+    
+     width:90%;
   }
- }
- #home{
-   margin-bottom:2px;
+  .button-component{
+    margin-top:-2rem;
+     width:600px;
+  }
  }

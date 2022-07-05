@@ -1,3 +1,20 @@
 #servicesContainer{
     margin-top:10rem;
 }
+.services-text{
+    overflow: hidden;
+  position: relative;
+  max-height: 6em;
+  text-align: justify;
+  margin-right: -1em;
+  padding-right: 1em;
+  text-overflow: ellipsis;
+  max-height:2.5rem;
+  text-align: center;
+}
+.section-text{
+  font: 20px/1.9em 'librebaskerville-regular', serif;
+  color: rgb(202, 187, 187);
+  width:85%;
+  text-align: center;
+}

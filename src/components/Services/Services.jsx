@@ -20,14 +20,14 @@ const Services = () => {
 			  <div className="container">
         <div className="section-header">
         <h3>Our Open Source APIs</h3>
-          <p><i>Take a look at some of our APIs. </i></p>
+          <p className='section-text'><i>Take a look at some of our APIs. </i></p>
         </div>
 
         <div className="row">
           {DATA.service_name.map((val, index) => {
             return (
-              <div className="col-lg-3 col-md-6" key={index}>
-                <Card sx={{ maxWidth: 400 }} className="team-content"  >
+              <div className="col-lg-3 col-md-6" key={index} style={{marginBottom:"2rem"}}>
+                <Card sx={{ maxWidth: 400 }} className="services-content"  >
                   <CardActionArea href="https://github.com/OpenAPIs-Tech/tahoe">
                     <CardMedia
                       component="img"
@@ -36,13 +36,13 @@ const Services = () => {
                       alt="api"
                     />
                     <CardContent>
-                      <Typography gutterBottom variant="h5" component="div" >
+                      <Typography gutterBottom variant="h5" component="div" style={{textAlign:"center"}} >
                         {val} 
                       </Typography>
                       <Typography variant="body2" color="text.secondary">
-                      <div  >
+                      <p className='services-text' >
                    {DATA.text[index]}
-                  </div>
+                  </p>
                       </Typography>
                     </CardContent>
                   </CardActionArea>
