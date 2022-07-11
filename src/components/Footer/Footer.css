@@ -16,8 +16,7 @@ ul {
   margin-top: 8px;
 }
 .cta-text {
-  padding-left:1rem;
-  display: inline-block;
+ padding-left:3rem;
 }
 .cta-text h4 {
   color: rgb(0, 0, 0);
@@ -54,6 +53,7 @@ ul {
       color: rgb(202, 187, 187);
   line-height: 28px;
 }
+
 .footer-social-icon span {
   color: rgb(202, 187, 187);
   display: block;
@@ -161,4 +161,10 @@ ul {
 .footer-menu li a {
   font-size: 14px;
   color: #878787;
+}
+@media (max-width: 960px) {
+  .footer-social-icon{
+    margin-top:2rem;
+    margin-left:-2rem;
+  }
 }
