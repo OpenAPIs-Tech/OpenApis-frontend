@@ -24,7 +24,7 @@ export const Footer = () => {
                         <i class="fas fa-phone"></i>
                         <div class="cta-text">
                             <h4>Call us</h4>
-                            <span>9876543210 0</span>
+                            <span></span>
                         </div>
                     </div>
                 </div>
@@ -33,7 +33,7 @@ export const Footer = () => {
                         <i class="far fa-envelope-open"></i>
                         <div class="cta-text">
                             <h4>Mail us</h4>
-                            <span>mail@info.com</span>
+                            <span>opensourceapis@gmail.com</span>
                         </div>
                     </div>
                 </div>
@@ -73,9 +73,9 @@ export const Footer = () => {
     
                     <div class="footer-social-icon">
                             <span style={{color:"black"}}>Follow us</span>
-                            <a href=""><i class="fab fa-facebook-f facebook-bg"></i></a>
-                            <a href="#"><i class="fab fa-twitter twitter-bg"></i></a>
-                            <a href="#"><i class="fab fa-google-plus-g google-bg"></i></a>
+                            <a href="https://github.com/OpenAPIs-Tech"><i class="fab fa-github github-bg"></i></a>
+                            <a href="https://www.linkedin.com/company/openapis"><i className="fab fa-linkedin linkedin-bg"></i></a>
+                            <a href="mailto:opensourceapis@gmail.com"><i class="fab fa-google-plus-g google-bg"></i></a>
                         </div>
                     </div>
                 </div>

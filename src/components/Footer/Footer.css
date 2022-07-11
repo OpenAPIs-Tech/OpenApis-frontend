@@ -10,7 +10,7 @@ ul {
   border-bottom: 0.5px solid #e7e2e2;
 }
 .single-cta i {
-  color: #6668f4;
+  color: #0164c9;
   font-size: 30px;
   float: left;
   margin-top: 8px;
@@ -75,10 +75,10 @@ ul {
   line-height: 38px;
   border-radius: 50%;
 }
-.facebook-bg{
-  background: #3B5998;
+.github-bg{
+  background: #2b2b2c;
 }
-.twitter-bg{
+.linkedin-bg{
   background: #55ACEE;
 }
 .google-bg{
@@ -127,7 +127,7 @@ ul {
 .subscribe-form button {
     position: absolute;
     right: 0;
-    background: #6668f4;;
+    background: #0164c9;
     padding: 13px 20px;
     border: 1px solid #ebebf3;
     border-top-right-radius:1rem;
