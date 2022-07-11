@@ -15,6 +15,8 @@
   #aboutContainer .cta-text {
     color: #fff;
     font-family: 'Poppins', sans-serif;
+    text-align: center;
+    
   }
   
   @media (min-width: 991px) {
@@ -23,6 +25,14 @@
       align-items: center;
       justify-content: flex-end;
     }
+
+    #aboutContainer .cta-text {
+      color: #fff;
+      font-family: 'Poppins', sans-serif;
+    
+      
+    }
+    
   }
   
   #aboutContainer .cta-btn {

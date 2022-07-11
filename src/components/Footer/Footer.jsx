@@ -7,12 +7,12 @@ export const Footer = () => {
     <div>
     <footer class="footer-section">
     <hr style={{height:"0.1px"}}></hr>
-    <div class="container">
+    <div class="container" style={{marginTop:"-2rem"}}>
         <div class="footer-cta pt-5 pb-5">
             <div class="row">
                 <div class="col-xl-4 col-md-4 mb-30">
                     <div class="single-cta">
-                        <i class="fas fa-map-marker-alt" style={{marginbottom:"2rem"}}></i>
+                        <i class="fas fa-map-marker-alt" style={{marginbottom:"rem"}}></i>
                         <div class="cta-text">
                             <h4>Find us</h4>
                             <span>Zakir Husain College of Engineering and Technology , AMU</span>
@@ -44,7 +44,7 @@ export const Footer = () => {
                 <div class="col-xl-4 col-lg-4 mb-50">
                     <div class="footer-widget">
                         <div class="footer-logo">
-                            <a href="/"><img src="assests/images/logo.svg" class="img-fluid" alt="logo" style={{fontSize:"2rem"}}/></a>
+                            <a href="/"><img src="assests/images/logo.svg" class="img-fluid" alt="logo" style={{height:"50px"}}/></a>
                         </div>
                         <div class="footer-text">
                             <p>We build Open APIs for developers </p>
