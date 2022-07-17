@@ -3,7 +3,8 @@ var DATA = {
     imgURL: ['assests/images/apis/resume-builder.jpg','assests/images/apis/link-generator.jpg'],
     text:["API will provide pdf in base64 as API response which can be used to render it in any UI facing technologies.",
     "This API will generate url from image file."],
-    GithubURL:['https://github.com/OpenAPIs-Tech/Resume-Generation-API','https://github.com/OpenAPIs-Tech/tahoe']
+    GithubURL:['https://github.com/OpenAPIs-Tech/Resume-Generation-API','https://github.com/OpenAPIs-Tech/tahoe'],
+    pathURL:["/documentation/resume-builder","/documentation/url-generator"]
 }
 
 export default DATA

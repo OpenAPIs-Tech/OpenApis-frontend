@@ -28,9 +28,9 @@ const Home = () => {
         <p>An Open Source Platform. For the Developers, By the developers</p>
       </div>
       <Stack direction="row" spacing={2} className="button-component" >
-      <Button variant="contained" style={{borderRadius:"0.5rem"}}>Get Started Now</Button>
-      <Button variant="contained" style={{borderRadius:"0.5rem",backgroundColor:"#E6E4E4"}}>
-        Learn Now 
+      <Button variant="contained" style={{borderRadius:"0.5rem"}} href='https://github.com/OpenAPIs-Tech' className='button-text'>Get Started Now</Button>
+      <Button variant="contained" style={{borderRadius:"0.5rem",backgroundColor:"#E6E4E4"}} href='https://www.linkedin.com/company/openapis' className='button-text' >
+        Connect with Us
       </Button>
     </Stack>
      

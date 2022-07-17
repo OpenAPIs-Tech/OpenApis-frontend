@@ -25,5 +25,18 @@
    font: 20px/1.9em 'librebaskerville-regular', serif;
    color: rgb(202, 187, 187);
    text-align: center;
+   margin-left:3rem;
 
  }
+
+ @media (max-width: 991px) {
+
+
+  .section-text{
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+
+ }
+
+}

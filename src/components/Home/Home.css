@@ -32,6 +32,10 @@
    justify-content: center;
  }
 
+ .button-text{
+   font-family: 'Poppins', sans-serif;
+ }
+
  @media (max-width: 960px) {
   .banner-text h1 {
     
@@ -39,6 +43,8 @@
   }
   .button-component{
     margin-top:-2rem;
-     width:600px;
+    padding:2px 2px;
+    text-align: center;
+    
   }
  }

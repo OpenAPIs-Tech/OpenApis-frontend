@@ -1,15 +1,17 @@
-import  Nav  from './components/Nav/Nav';
+
 import  Main  from './components/Main/Main';
-import NavProvider from './context/NavContext';
+import { Route, Routes } from "react-router-dom";
+import Documentation from "./components/Documentation/Documentation";
 
 
 function App() {
 	return (
 		<div className='appContainer'>
-			<NavProvider>
-				<Nav />
-				<Main />
-			</NavProvider>
+		<Routes>
+        <Route path="/" element={<Main />} />
+        <Route path="/documentation/:api" element={<Documentation/>} />
+        </Routes>
+			
 		</div>
 	);
 }
