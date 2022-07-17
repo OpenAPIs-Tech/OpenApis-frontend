@@ -6,7 +6,7 @@ import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import { CardActionArea } from "@mui/material";
 import DATA from "./ServicesDetails";
-import "./Services.css"
+import "./Services.css";
 
 
 
@@ -14,6 +14,9 @@ import "./Services.css"
 const Services = () => {
 
 	const servicesRef = useNav('Services');
+  const openInNewTab = url => {
+    window.open(url, '_blank', 'noopener,noreferrer');
+  };
 
 	return (
 		<div ref={servicesRef} id='servicesContainer'>
@@ -27,13 +30,15 @@ const Services = () => {
           {DATA.service_name.map((val, index) => {
             return (
               <div className="col-lg-3 col-md-6" key={index} style={{marginBottom:"2rem"}}>
-                <Card sx={{ maxWidth: 400 }} className="services-content"  >
-                  <CardActionArea href={DATA.GithubURL[index]}>
+                <Card sx={{ maxWidth: 400 }} className="services-content"   onClick={() => openInNewTab(DATA.pathURL[index])}
+                       >
+                  <CardActionArea >
                     <CardMedia
                       component="img"
                       height="140"
                       image={DATA.imgURL[index]}
                       alt="api"
+                     
                     />
                     <CardContent>
                       <Typography gutterBottom variant="h5" component="div" style={{textAlign:"center"}} >

@@ -1,13 +1,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
-import Footer from "./components/Footer/Footer"
+
+import NavProvider from './context/NavContext';
+import { BrowserRouter } from "react-router-dom";
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
-    <Footer />
+    <BrowserRouter>
+    <NavProvider>
+			
+        <App />
+      
+			</NavProvider>
+      </BrowserRouter>
+    
   </React.StrictMode>
 );
