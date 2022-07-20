@@ -13,23 +13,24 @@ function Navbar() {
   };
   return (
     <>
-    
       <nav className="navbar">
-        <h1 className="navbar-logo">
-          <a href="/">
-            <img src="assests/images/logo.svg" className="company_logo" alt="Logo" />
-          </a>
-        </h1>
-        <div className="menu-icon" onClick={handleClick}>
-          <i className={active ? "fas fa-times" : "fas fa-bars"}></i>
+        <div className="navbar-inner-container">
+          <h1 className="navbar-logo">
+            <a href="/">
+              <img src="assests/images/logo.svg" className="company_logo" alt="Logo" />
+            </a>
+          </h1>
+          <div className="menu-icon" onClick={handleClick}>
+            <i className={active ? "fas fa-times" : "fas fa-bars"}></i>
+          </div>
         </div>
         <ul className={active ? "nav-menu active" : "nav-menu"}>
-          
-				{navLinks.map(({ navLinkId, scrollToId }, idx) => (
-				
-					<NavLink key={idx} navLinkId={navLinkId} scrollToId={scrollToId} className="navlink"/>
-				))}
-           
+
+          {navLinks.map(({ navLinkId, scrollToId }, idx) => (
+
+            <NavLink onClick={handleClick} key={idx} navLinkId={navLinkId} scrollToId={scrollToId} className="navlink" />
+          ))}
+
         </ul>
       </nav>
     </>
