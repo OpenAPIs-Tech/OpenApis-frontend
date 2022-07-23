@@ -2,7 +2,7 @@
 .navbar {
   background-color: rgb(255, 255, 255);
   z-index: 100;
-  position: relative;
+  position: sticky;
   width: 100%;
   top: -1px;
   background: #fff;
@@ -10,14 +10,24 @@
   justify-content: center;
   align-items: center;
   font-size: 1.2rem;
+  transition: all 0.5s;
+  padding: 0px;
   box-shadow: 0.5px 0.5px 0.5px 0.5px rgba(121, 121, 121, 0.2);
+}
+
+.navbar-open {
+  transform: translate(0, -100%);
+}
+
+.navbar-close {
+  transform: translate(0, 0%);
 }
 
 .navbar-inner-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 14px 0px;
+  padding: 10px 0px;
 }
 
 .nav-links {
@@ -117,10 +127,10 @@
     z-index: 30;
   }
 
-  .nav-links:hover {
+  /* .nav-links:hover {
     background-color: #7577fa;
     border-radius: 0;
-  }
+  } */
 
   .navbar-logo {
     position: relative;
